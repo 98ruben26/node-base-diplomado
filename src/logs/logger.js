@@ -6,7 +6,7 @@ const logger = pino({
     options: {
       translateTime: 'SYS:dd/mm/yyyy HH:mm:ss',
     },
-  },
+  }, 
 });
 
 export default logger
