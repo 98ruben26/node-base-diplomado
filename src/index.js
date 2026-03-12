@@ -3,12 +3,12 @@ import 'dotenv/config'
 import app from './app.js';
 import env from './config/env.js';
 import logger from './logs/logger.js';
-import sequelize from './config/database.js'; // Sin llaves {} porque es export default
-//import { sequelize } from './models/index.js';
+//import sequelize from './config/database.js'; // Sin llaves {} porque es export default
+import { sequelize } from './models/index.js';
 
 async function main() {
   await sequelize.authenticate();
-  logger.info('DB conectada correctamente');
+  logger.info('DB conectada correctamente');//
   await sequelize.sync({ alter: true });
   logger.info('Tablas sincronizadas');
 
