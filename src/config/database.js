@@ -1,6 +1,6 @@
 //import { Sequelize } from 'sequelize';
 //import dotenv from 'dotenv';
-require('dotenv').config();
+const { Sequelize } = require('sequelize');
 import env from './env.js';
 //dotenv.config();
 
