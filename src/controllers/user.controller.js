@@ -1,7 +1,7 @@
-//import bcrypt from 'bcrypt';
-const { bcrypt } = require('bcrypt');
-//import { Op } from 'sequelize';
-const { Op } = require('sequelize')
+import bcrypt from 'bcrypt';
+//const { bcrypt } = require('bcrypt');
+import { Op } from 'sequelize';
+//const { Op } = require('sequelize')
 import { User, Task } from '../models/index.js';
 import env from '../config/env.js';
 
