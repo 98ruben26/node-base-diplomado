@@ -1,4 +1,5 @@
-import jwt from 'jsonwebtoken';
+//import jwt from 'jsonwebtoken';
+const { jwt } = require('jsonwebtoken')
 //import bcrypt from 'bcrypt';
 const { bcrypt } = require('bcrypt');
 import { User } from '../models/index.js';
