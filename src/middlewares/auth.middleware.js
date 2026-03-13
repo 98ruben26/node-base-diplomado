@@ -1,4 +1,5 @@
-import jwt from 'jsonwebtoken';
+//import jwt from 'jsonwebtoken';
+const { jwt } = require('jsonwebtoken')
 import env from '../config/env.js';
 
 const verifyToken = (req, res, next) => {
